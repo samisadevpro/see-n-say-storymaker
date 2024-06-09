@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+/* This specifies the character encoding for the CSS file. */
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets a modern, readable font family for the page */
+    background-color: rgb(236, 236, 14); /* Sets a light teal background color for the page */
+    margin: 0; /* Removes default margin around the page */
+    padding: 0; /* Removes default padding around the page */
+    display: flex; /* Uses flexbox layout for the body */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Sets the height to the full viewport height */
+    flex-direction: column; /* Arranges children in a column */
+    gap: 40px; /* Adds space between flex items */
+}
+
+/* Container styling */
+.container {
+    background-color: #ffffff; /* Sets a white background for the container */
+    padding: 30px; /* Adds padding inside the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Adds a soft shadow to create a floating effect */
+    text-align: center; /* Centers text inside the container */
+    width: 80%; /* Sets the container width to 80% of the parent */
+    max-width: 600px; /* Limits the container width to 600px */
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px; /* Adds space below the heading */
+    font-size: 24px; /* Sets the font size of the heading */
+    color: #00796b; /* Sets the text color to dark teal */
+}
+
+/* Button group styling */
+.buttons, .story-controls {
+    margin-bottom: 20px; /* Adds space below the button group */
+    display: flex; /* Uses flexbox layout for the button groups */
+    justify-content: center; /* Centers buttons horizontally */
+    flex-wrap: wrap; /* Allows buttons to wrap to the next line */
+    gap: 10px; /* Adds space between buttons */
+}
+
+/* Button styling */
+button {
+    background-color: #00796b; /* Sets the button background color to dark teal */
+    color: #ffffff; /* Sets the button text color to white */
+    border: none; /* Removes default border */
+    height: 120px;
+    width: 120px;
+    margin: 10px; /* Adds space around the buttons */
+    border-radius: 50%; /* Rounds the corners of the buttons */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    font-size: 16px; /* Sets the button font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adds smooth transitions for hover and active states */
+}
+
+button:hover {
+    background-color: #004d40; /* Changes the button background to a darker teal on hover */
+    transform: translateY(-2px); /* Lifts the button slightly on hover */
+}
+
+button:active {
+    background-color: #004d40; /* Keeps the darker teal background on active click */
+    transform: translateY(0); /* Resets the button position on click */
+}
+
+/* Story output area styling */
+.story-output {
+    margin-top: 20px; /* Adds space above the story output area */
+    font-size: 18px; /* Sets the font size of the story text */
+    min-height: 50px; /* Ensures the story output area has a minimum height */
+    padding: 15px; /* Adds padding inside the story output area */
+    border: 1px solid #ddd; /* Adds a light grey border */
+    border-radius: 5px; /* Rounds the corners of the story output area */
+    background-color: #fafafa; /* Sets a light grey background */
+    color: #00796b; /* Sets the text color to dark teal */
+    white-space: pre-line; /* Preserves spaces and line breaks */
+    text-align: left; /* Aligns text to the left */
+}
+
+#nounBtn
+{
+    background-color: #bf11ae;
+}
+
+#verbBtn
+{
+    background-color: #2fccef;
+}
+
+#adjBtn{
+
+    background-color: #62cb17;
+}
+#noun2Btn{
+    background-color: #fb8c22;
+
+}
+#placeBtn{
+    background-color: #fa54d1;
+
+}
+#randomStoryBtn{
+    background-color: #fff;
+    color:#000;
+
+}
+#resetBtn{
+    background-color: #e6150a;
+
+}
+#speakBtn{
+    background-color: #26ab9d;
+
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Reduces padding inside the container on small screens */
+        width: 100%; /* Sets the container width to 100% of the parent on small screens */
+    }
+
+    button {
+        font-size: 14px; /* Reduces button font size on small screens */
+        padding: 10px; /* Reduces button padding on small screens */
+    }
+
+    .story-output {
+        font-size: 16px; /* Reduces font size for the story output on small screens */
+        padding: 10px; /* Reduces padding inside the story output area on small screens */
+    }
+}
